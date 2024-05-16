@@ -1,0 +1,129 @@
+
+/* cor do car  */
+.card{
+    background-color: rgb(173, 245, 245);
+    justify-content: space-around;
+    width: 15rem;
+    margin: 5px;
+   
+}
+/* cor do site sem nav */
+body{
+    background-color: rgb(28, 28, 28);
+}
+/* conteudo card */
+.conteudo{
+    display: flex;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 50px;
+   
+}
+/* imagem card */
+.conteudo img{
+    height: 200px;
+}
+/* titulo de todo conteudo */
+.titulo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffba62;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-family: 'Sigmar', cursive;
+
+}
+.card-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Titulo Esportes do mundo Feminino */
+.navbar-brand{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+}
+.navbar-brand2{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+    color: #ffba62;
+    text-decoration: none;
+}
+
+/* Botoes a esquerda */
+.navbar-nav{
+    margin-left: 20rem;
+
+}
+/* todo conteudo de texto  */
+.texto{
+    color: rgb(240, 238, 238);
+    padding: 75px;
+    font-family: 'Dancing Script', cursive;
+    font-size: medium;
+    text-align: center;
+    
+}
+.texto2{
+    color: rgb(240, 238, 238);
+    padding: 75px;
+    font-family: 'Dancing Script', cursive;
+    font-size: medium;
+    text-align: left;
+    
+}
+#logo{
+    width: 70px;
+    margin: 0;
+} 
+.conteudo2{
+    margin-top: 15rem;
+}
+#motivacional{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffba62;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-family: 'Dancing Script', cursive;
+    padding: 100px;
+    font-size: 25px;
+}
+.frase{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(48, 48, 48);
+    border-radius: 50px;
+    width:75rem ;
+    height: 8rem;
+    margin-left: 2rem;
+    box-shadow: -5px 5px 3px 0px #ffffffdb;
+}
+.rodape{
+    position:fixed;
+    bottom:0px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    background-color: rgb(43, 48, 53);
+    width: 80rem;
+    height: 2rem;
+    color: white;
+    
+}
+.container {
+    display: flex;
+    align-items: center; /* Alinha verticalmente */
+}
+
+.left {
+    flex: 1; /* Ocupa o máximo de espaço disponível */
+}
+
+.right {
+    margin-left: 20px; /* Espaço entre o texto e a imagem */
+}
