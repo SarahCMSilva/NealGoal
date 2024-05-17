@@ -1,30 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
 
-/* cor do car  */
-.card{
-    background-color: rgb(173, 245, 245);
+/* cor do card */
+.card {
+    background-color: rgb(34, 34, 34);
     justify-content: space-around;
     width: 15rem;
-    margin: 5px;
-   
+    margin: 20px;
 }
+
+.card-img-top {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
 /* cor do site sem nav */
-body{
-    background-color: rgb(28, 28, 28);
+body {
+    background-color: rgb(0, 0, 0);
 }
+
 /* conteudo card */
-.conteudo{
+.conteudo {
     display: flex;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-top: 50px;
-   
+    flex-wrap: wrap; /* Permite que os cards quebrem linha se necessário */
+    justify-content: center; /* Centraliza os cards horizontalmente */
+    
+}
+.conteudo2 {
+    margin-top: 5rem;
 }
 /* imagem card */
-.conteudo img{
+.conteudo img {
     height: 200px;
 }
+
 /* titulo de todo conteudo */
-.titulo{
+.titulo {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -32,20 +43,29 @@ body{
     margin-bottom: 20px;
     margin-top: 20px;
     font-family: 'Sigmar', cursive;
-
+    font-family: "Play", sans-serif;
 }
-.card-title{
+
+.card-title {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
+.card-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /* Titulo Esportes do mundo Feminino */
-.navbar-brand{
+.navbar-brand {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 30px;
     color: rgb(255, 255, 255);
 }
-.navbar-brand2{
+
+.navbar-brand2 {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 30px;
     color: #ffba62;
@@ -53,35 +73,36 @@ body{
 }
 
 /* Botoes a esquerda */
-.navbar-nav{
+.navbar-nav {
     margin-left: 20rem;
-
 }
-/* todo conteudo de texto  */
-.texto{
+
+/* todo conteudo de texto */
+.texto {
     color: rgb(240, 238, 238);
     padding: 75px;
     font-family: 'Dancing Script', cursive;
     font-size: medium;
     text-align: center;
-    
+    font-family: "Play", sans-serif;
 }
-.texto2{
+
+.texto2 {
     color: rgb(240, 238, 238);
     padding: 75px;
     font-family: 'Dancing Script', cursive;
     font-size: medium;
     text-align: left;
-    
 }
-#logo{
+
+#logo {
     width: 70px;
     margin: 0;
-} 
-.conteudo2{
-    margin-top: 15rem;
 }
-#motivacional{
+
+
+
+#motivacional {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -92,29 +113,32 @@ body{
     padding: 100px;
     font-size: 25px;
 }
-.frase{
+
+.frase {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: rgb(48, 48, 48);
     border-radius: 50px;
-    width:75rem ;
+    width: 75rem;
     height: 8rem;
     margin-left: 2rem;
     box-shadow: -5px 5px 3px 0px #ffffffdb;
 }
-.rodape{
-    position:fixed;
-    bottom:0px;
+
+.rodape {
+    
+    position: fixed;
+    bottom: 0px;
     display: flex;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
     background-color: rgb(43, 48, 53);
-    width: 80rem;
+    width: 100%;
     height: 2rem;
     color: white;
-    
 }
+
 .container {
     display: flex;
     align-items: center; /* Alinha verticalmente */
@@ -126,4 +150,63 @@ body{
 
 .right {
     margin-left: 20px; /* Espaço entre o texto e a imagem */
+}
+
+#imagem {
+    border: 5px solid orange;
+    box-shadow: 
+        0 0 10px orange,
+        0 0 20px orange,
+        0 0 30px orange,
+        0 0 40px orange;
+}
+
+/* CSS */
+.button-64 {
+    align-items: center;
+    background-image: linear-gradient(144deg, #FFA500, #FF8C00 50%, #FF4500);
+    border: 0;
+    border-radius: 8px;
+    box-shadow: rgba(255, 140, 0, 0.2) 0 15px 30px -5px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    display: flex;
+    font-family: Phantomsans, sans-serif;
+    font-size: 16px; /* Diminuído de 20px para 16px */
+    justify-content: center;
+    line-height: 1em;
+    max-width: 100%;
+    min-width: 120px; /* Diminuído de 140px para 120px */
+    padding: 2px; /* Diminuído de 3px para 2px */
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.button-64:active,
+.button-64:hover {
+    outline: 0;
+}
+
+.button-64 span {
+    background-color: #000000; /* Cor de fundo preta */
+    padding: 12px 20px; /* Diminuído de 16px 24px para 12px 20px */
+    border-radius: 6px;
+    width: 100%;
+    height: 100%;
+    transition: 300ms;
+}
+
+.button-64:hover span {
+    background: none;
+}
+
+@media (min-width: 768px) {
+    .button-64 {
+        font-size: 20px; /* Diminuído de 24px para 20px */
+        min-width: 160px; /* Diminuído de 196px para 160px */
+    }
 }
