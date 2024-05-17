@@ -210,3 +210,46 @@ body {
         min-width: 160px; /* Diminuído de 196px para 160px */
     }
 }
+/* Estilos para telas menores que 768px (Tablets e Smartphones) */
+@media (max-width: 767px) {
+    body {
+        overflow-x: hidden; /* Impede a rolagem horizontal */
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Alinha o conteúdo ao centro */
+        margin: 2em;
+    }
+
+    .img {
+        width: 100%; /* Ajusta a largura da imagem para preencher o contêiner */
+        max-width: 100%;
+        height: auto;
+        max-height: 200px; /* Define uma altura máxima para evitar a rolagem horizontal */
+    }
+
+    .navbar-collapse {
+        display: none; /* Oculta o menu de navegação */
+    }
+
+    .navbar-toggler {
+        display: block; /* Exibe o botão de menu para dispositivos móveis */
+    }
+
+    .navbar-nav {
+        margin-left: 0; /* Remove o recuo do menu */
+    }
+}
+
+/* Estilos para telas maiores que 768px (Desktops) */
+@media (min-width: 768px) {
+    .navbar-collapse {
+        display: flex !important; /* Garante que o menu de navegação seja exibido */
+    }
+
+    .navbar-toggler {
+        display: none; /* Oculta o botão de menu para desktops */
+    }
+}
